@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Digipuppies</title>
+
+    <!-- stylesheet files -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="imgs/logo.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="FAQs.html">FAQs</a></li>
+                    <li><a href="#" type="button" class="sign-in" data-toggle="modal" data-target="#sign-in">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- //header -->
+    <!-- sign in modal -->
+    <div class="modal fade sign-in" id="sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+             <h2>Woof! Let’s Go</h2>
+              <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                      <div class="social-buttons">
+                          <a href="" class="facebook"><i class="fa fa-facebook"></i> Login With Facebook</a>
+                          <a href="" class="twitter"><i class="fa fa-twitter"></i> Login With Twitter</a>
+                          <a href="" class="google"><i class="fa fa-google-plus"></i> Login With Google+</a>
+                          <b></b>
+                          <span>OR</span>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                      <div class="manually">
+                          <h3>Sign in Manually</h3>
+                          <form>
+                              <p><input type="text" placeholder="Email"></p>
+                              <p><input type="password" placeholder="Password"></p>
+                              <p class="checkb"><input type="checkbox" class="check" id="remember"><label for="remember"></label> Remember me</p>
+                              <p>
+                                  <input type="submit" value="Sign In">
+                              </p>
+                          </form>
+                          <div class="create-forget">
+                              <a href="" class="create">Create Accout</a>
+                              <b></b>
+                              <a href="" class="forget">Forgot Password?</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //sign in modal-->
+    <!-- sign up modal -->
+    <div class="modal fade sign-up" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="false">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+             <h2>Woof! Let’s Go</h2>
+             <h3>Register a new account</h3>
+              <div class="row">
+                  <div class="col-xs-12 col-md-6">
+                      <div class="inputs">
+                          <p><input type="text" placeholder="*Username"></p>
+                          <p><input type="password" placeholder="*Password"></p>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-md-6">
+                      <div class="inputs">
+                          <p><input type="text" placeholder="*Email"></p>
+                          <p><input type="password" placeholder="*Confirm Password"></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="remember">
+                  <input type="checkbox" id="registerremember"><label for="registerremember"></label> Remember me
+              </div>
+              <p><input type="submit" value="Create Account"></p>
+              <p class="have-account">Already have account? <a href="">Login</a></p>
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //sign up modal-->
+    <!-- create-puppies -->
+    <section class="create-puppies">
+        <div class="container">
+            <div class="create-puppies-box">
+                <h1>Create Your Puppies!</h1>
+                <p>Digital doggies you can love, grow,
+                    <br> breed, and teach tricks.</p>
+                <a href="#" type="button" data-toggle="modal" data-target="#sign-up" class="sign-up">Woof! Sign Up</a>
+            </div>
+        </div>
+    </section>
+    <!-- //create-puppies -->
+    <!-- what-are-digipuppies -->
+    <section class="what-digipuppies">
+        <h2>What are Digipuppies?</h2>
+        <p>DigiPuppies are adorable, loyal, obscene, and paw-some! This cryptogame allows users to collect, buy and trade rare digital assets by using the power of blockchain technology. Find your perfect puppy today!</p>
+        <img src="imgs/puppies.png" alt="img" class="img-responsive">
+        <a href="#">Puppy, Please!</a>
+    </section>
+    <!-- //what-are-digipuppies -->
+    <!-- why-get-a-puppy -->
+    <section class="why-puppy">
+        <div class="container">
+            <div class="puppy-box">
+                <h2>Why get a puppy?</h2>
+                <p>Become a puppy parent today! Everyone needs a pup in their life, but not everyone can have one. DitgiPuppies lets anyone in the world own a cute puppy and keep him safe and secure!
+                    <br>
+                    <br> DigiPuppies give unconditional love too - unlike mean, scary cats!</p>
+            </div>
+        </div>
+    </section>
+    <!-- //why-get-a-puppy -->
+    <!-- fall-in-love -->
+    <section class="fall-in-love">
+        <div class="container">
+            <h2>Puppies can fall in love...</h2>
+            <div class="items">
+                <div class="row">
+                    <div class="col-xs-12 col-md-4">
+                        <div class="item">
+                            <img src="imgs/pup-1.png" alt="img" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="item">
+                            <img src="imgs/pup-2.png" alt="img" class="img-responsive">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        <div class="item">
+                            <img src="imgs/pup-3.png" alt="img" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3>and that means more tail wagging fun!</h3>
+        </div>
+    </section>
+    <!-- //fall-in-love -->
+    <!-- helps -->
+    <section class="helps">
+        <div class="container">
+            <p>DigiPuppies helps everyone learn about cryptocurrency and benefit from the power and flexibility of blockchain technology. Plus, it’s fun! Through gameplay and exploration, a dry and sophisticated topic is made simple, and its potential and usefulness are revealed in an adorable and approachable way.<br><br>
+Gameplay creates something unique - just like you!</p>
+            <a href="">Woof! Join the pack today!</a>
+        </div>
+    </section>
+    <!-- //helps -->
+    <!-- footer -->
+    <footer>
+       <div class="container">
+        <div class="logo">Digipupies</div>
+        <div class="links">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <ul>
+                        <li><a href="">My Puppies</a></li>
+                        <li><a href="">Activity</a></li>
+                        <li><a href="">Marketplace</a></li>
+                        <li><a href="">FAQs</a></li>
+                        <li><a href="">Help & Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Press</a></li>
+                        <li><a href="">Tech details</a></li>
+                        <li><a href="">Woof Paper</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-offset-4 col-lg-offset-4 col-xs-12 col-sm-6 col-md-2">
+                    <ul>
+                        <li><a href="">Facebook</a></li>
+                        <li><a href="">Twitter</a></li>
+                        <li><a href="">Reddit</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2">
+                    <ul>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <!-- //footer -->
+
+    <!-- javascript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

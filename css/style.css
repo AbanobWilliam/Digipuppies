@@ -1,0 +1,1257 @@
+/* framework */
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+li,
+ol {
+    list-style: none;
+}
+
+a,
+a:active,
+a:focus,
+a:visited,
+a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: c-b;
+    src: url('../fonts/Cabin-Bold.ttf');
+}
+
+@font-face {
+    font-family: c-r;
+    src: url('../fonts/Cabin-Regular.ttf');
+}
+
+@font-face {
+    font-family: l-b;
+    src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: l-r;
+    src: url('../fonts/Lato-Regular.ttf');
+}
+
+
+/* //framework */
+
+
+/*==================================
+    Home page
+==================================*/
+
+
+/* header */
+
+nav.navbar-default {
+    background: none;
+    border: none;
+    padding: 37px 0px;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+}
+
+nav.navbar-default.scrolling {
+    background: #fff;
+    box-shadow: 0px 0px 15px #333;
+    -webkit-box-shadow: 0px 0px 15px #333;
+    -moz-box-shadow: 0px 0px 15px #333;
+    -o-box-shadow: 0px 0px 15px #333;
+    -ms-box-shadow: 0px 0px 15px #333;
+    padding: 37px 0px 22px 0px;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+}
+
+nav.navbar-default a.navbar-brand {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav.navbar-default ul.navbar-right li a {
+    font-family: c-r;
+    color: #f17172;
+    font-size: 18px;
+    position: relative;
+    text-align: center;
+}
+
+nav.navbar-default ul.navbar-right li.active a,
+nav.navbar-default ul.navbar-right li a:hover {
+    color: #2e2e2e !important;
+    background: none;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+}
+
+nav.navbar-default ul.navbar-right li.active a:hover {
+    background: none;
+}
+
+nav.navbar-default ul.navbar-right li a:after {
+    content: "";
+    height: 1px;
+    width: 0px;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+}
+
+nav.navbar-default ul.navbar-right li.active a:after,
+nav.navbar-default ul.navbar-right li a:hover:after {
+    content: "";
+    position: absolute;
+    bottom: 13px;
+    left: 0px;
+    display: block;
+    height: 2px;
+    width: 66%;
+    background: #2e2e2e;
+    left: 17%;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+}
+
+nav.navbar-default ul.navbar-right li a.sign-in {
+    font-family: c-b;
+}
+
+nav.navbar-default ul.navbar-right li a:hover {
+    color: #f17172;
+}
+
+
+/*// header */
+
+
+/* sign in modal */
+
+div.sign-in div.modal-content,
+div.sign-up div.modal-content {
+    box-shadow: 0px 0px 15px #efefef;
+    -webkit-box-shadow: 0px 0px 15px #efefef;
+    -moz-box-shadow: 0px 0px 15px #efefef;
+    -o-box-shadow: 0px 0px 15px #efefef;
+    -ms-box-shadow: 0px 0px 15px #efefef;
+    border: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.sign-in div.modal-content div.modal-header,
+div.sign-up div.modal-content div.modal-header {
+    border-bottom: 0px;
+}
+
+div.sign-in div.modal-dialog,
+div.sign-up div.modal-dialog {
+    width: 750px;
+    margin: 5vh auto;
+    border-bottom: 10px solid #efefef;
+    border-radius: 10px;
+}
+
+div.sign-in div.modal-content div.modal-body,
+div.sign-up div.modal-content div.modal-body {
+    padding: 40px 60px 60px 60px;
+}
+
+div.sign-in h2,
+div.sign-up h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #f17172;
+    margin-bottom: 20px;
+    font-family: c-b;
+}
+
+div.sign-in div.social-buttons {
+    position: relative;
+    border-right: 1px solid #b7b7b7;
+    padding: 30px 0px;
+}
+
+div.sign-in div.social-buttons a {
+    display: block;
+    margin: 30px 0px;
+    width: 250px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px 20px;
+    font-size: 18px;
+    color: #fff;
+    font-family: l-b;
+    border-radius: 6px;
+}
+
+div.sign-in div.social-buttons a i {
+    font-size: 25px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    float: left;
+    margin-top: 10px;
+}
+
+div.sign-in div.social-buttons a.facebook {
+    background: #507cc0;
+    border-bottom: 6px solid #3c5e93;
+}
+
+div.sign-in div.social-buttons a.twitter {
+    background: #64ccf1;
+    border-bottom: 6px solid #4faaca;
+}
+
+div.sign-in div.social-buttons a.google {
+    background: #df4930;
+    border-bottom: 6px solid #ba3c27;
+}
+
+div.sign-in div.social-buttons a.facebook:active {
+    border-bottom: 0px solid #3c5e93;
+}
+
+div.sign-in div.social-buttons a.twitter:active {
+    border-bottom: 0px solid #4faaca;
+}
+
+div.sign-in div.social-buttons a.google:active {
+    border-bottom: 0px solid #ba3c27;
+}
+
+div.sign-in div.social-buttons a:active {
+    margin-top: 33px;
+    transition: all ease-in-out 0.1s;
+    -webkit-transition: all ease-in-out 0.1s;
+    -moz-transition: all ease-in-out 0.1s;
+    -o-transition: all ease-in-out 0.1s;
+    -ms-transition: all ease-in-out 0.1s;
+}
+
+div.sign-in div.social-buttons span {
+    display: block;
+    position: absolute;
+    right: -25px;
+    top: calc(50% - 25px);
+    top: -webkit-calc(50% - 25px);
+    top: -moz-calc(50% - 25px);
+    top: -o-calc(50% - 25px);
+    top: -ms-calc(50% - 25px);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    z-index: 2000;
+    background: #fff;
+    border: 1px solid #b7b7b7;
+    color: #588188;
+    font-family: l-b;
+    border-radius: 50%;
+    font-size: 14px;
+}
+
+div.sign-in div.manually {
+    padding: 0px 0px 0px 20px;
+}
+
+div.sign-in div.manually h3 {
+    font-size: 18px;
+    color: #588188;
+    margin: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: l-b;
+}
+
+div.sign-in div.manually form p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+div.sign-in div.manually form p input[type="text"],
+div.sign-in div.manually form p input[type="password"] {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #ebeef0;
+    padding: 0px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: l-b;
+    color: #588188;
+    margin-bottom: 22px;
+    width: 230px;
+}
+
+div.sign-in div.manually form p.checkb {
+    width: 140px;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    font-family: l-b;
+    font-size: 14px;
+    color: #588188;
+}
+
+div.sign-in div.manually form p.checkb label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ebeef0;
+    border-radius: 3px;
+    float: left;
+    cursor: pointer;
+}
+
+div.sign-in div.manually form p.checkb input[type="checkbox"] {
+    display: none;
+}
+
+div.sign-in div.manually form p.checkb input[type="checkbox"]:checked + label {
+    background: #588188;
+    border-radius: 3px;
+    border-color: #588188;
+}
+
+div.sign-in div.manually form p.checkb input[type="checkbox"]:checked + label:before {
+    content: '\2713';
+    color: #fff;
+    display: block;
+    font-size: 13px;
+}
+
+div.sign-in div.manually form p input[type="submit"] {
+    width: 230px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 22px;
+    background: #4685a4;
+    border: none;
+    border-bottom: 6px solid #284f6d;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-family: l-b;
+}
+
+div.sign-in div.manually form p input[type="submit"]:active {
+    border-bottom: 0px solid #284f6d;
+    margin-top: 28px;
+    transition: all ease-in-out 0.1s;
+    -webkit-transition: all ease-in-out 0.1s;
+    -moz-transition: all ease-in-out 0.1s;
+    -o-transition: all ease-in-out 0.1s;
+    -ms-transition: all ease-in-out 0.1s;
+}
+
+div.sign-in div.manually div.create-forget {
+    margin-top: 22px;
+    text-align: center;
+}
+
+div.sign-in div.manually div.create-forget a,
+div.sign-in div.manually div.create-forget b {
+    display: inline-block;
+    font-family: l-b;
+}
+
+div.sign-in div.manually div.create-forget a.create {
+    color: #f17172;
+    margin-right: 6px;
+}
+
+div.sign-in div.manually div.create-forget b {
+    width: 2px;
+    height: 15px;
+    background: #808080;
+    font-size: 18px;
+    margin-bottom: -3px;
+    margin-right: 6px;
+}
+
+div.sign-in div.manually div.create-forget a.forget {
+    color: #959595;
+}
+
+
+/* //sign in modal */
+
+
+/* sign up modal */
+
+div.sign-up {
+    text-align: center;
+}
+
+div.sign-up h3 {
+    color: #588188;
+    font-family: l-b;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+div.sign-up p {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.sign-up p input {
+    margin-top: 22px;
+    height: 50px;
+    widows: 230px;
+    border: 1px solid #ebeef0;
+    border-radius: 5px;
+    padding: 0px 10px;
+    color: #588188;
+}
+
+div.sign-up p input[type="text"] {
+    margin-top: 0px;
+}
+
+div.sign-up div.remember {
+    margin-top: 22px;
+    color: #588188;
+    font-family: l-b;
+    font-size: 14px;
+    width: 140px;
+    display: inline-block;
+}
+
+div.sign-up div.remember label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ebeef0;
+    border-radius: 3px;
+    float: left;
+    cursor: pointer;
+}
+
+div.sign-up div.remember input[type="checkbox"] {
+    display: none;
+}
+
+div.sign-up div.remember input[type="checkbox"]:checked + label {
+    background: #588188;
+    border-color: #588188;
+}
+
+div.sign-up div.remember input[type="checkbox"]:checked + label:before {
+    content: '\2713';
+    color: #fff;
+    display: block;
+    font-size: 13px;
+}
+
+div.sign-up p input[type="submit"] {
+    background: #9a45a9;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 18px;
+    font-family: l-b;
+    border: none;
+    border-radius: 6px;
+    border-bottom: 6px solid #822b87;
+    margin-bottom: 22px;
+}
+
+div.sign-up p input[type="submit"]:active {
+    border-bottom: 0px solid #822b87;
+    margin-top: 28px;
+    transition: all ease-in-out 0.1;
+    -webkit-transition: all ease-in-out 0.1;
+    -moz-transition: all ease-in-out 0.1;
+    -o-transition: all ease-in-out 0.1;
+    -ms-transition: all ease-in-out 0.1;
+}
+
+div.sign-up p.have-account {
+    color: #959595;
+    font-family: l-b;
+    font-size: 14px;
+}
+
+div.sign-up p.have-account a {
+    font-family: l-b;
+    font-size: 14px;
+    color: #f17172;
+    margin-left: 5px;
+}
+
+
+/* //sign up modal */
+
+
+/* create puppies */
+
+section.create-puppies {
+    height: 100vh;
+    background: url('../imgs/banner-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+section.create-puppies div.create-puppies-box {
+    display: inline-block;
+    vertical-align: middle;
+    width: 750px;
+    margin-top: 25vh;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0px 0px 5px #efefef;
+    -webkit-box-shadow: 0px 0px 5px #efefef;
+    -moz-box-shadow: 0px 0px 5px #efefef;
+    -o-box-shadow: 0px 0px 5px #efefef;
+    -ms-box-shadow: 0px 0px 5px #efefef;
+    border-bottom: 10px solid #efefef;
+    border-radius: 12px;
+    padding: 65px 0px;
+    overflow: hidden;
+    height: 63vh;
+}
+
+section.create-puppies div.create-puppies-box h1 {
+    color: #f17172;
+    font-size: 50px;
+    font-family: c-b;
+    margin-bottom: 22px;
+}
+
+section.create-puppies div.create-puppies-box p {
+    font-size: 28px;
+    color: #4a4a4a;
+    margin-bottom: 31px;
+}
+
+section.create-puppies div.create-puppies-box a.sign-up {
+    display: inline-block;
+    background: #f17172;
+    color: #fff;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 5px;
+    border-bottom: 6px solid #ffa89d;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: l-b;
+}
+
+section.create-puppies div.create-puppies-box a.sign-up:active {
+    border-bottom: 0px solid #ffa89d;
+    margin-top: 6px;
+    transition: all ease-in-out 0.1s;
+    -webkit-transition: all ease-in-out 0.1s;
+    -moz-transition: all ease-in-out 0.1s;
+    -o-transition: all ease-in-out 0.1s;
+    -ms-transition: all ease-in-out 0.1s;
+}
+
+
+/* //create puppies */
+
+
+/* what-are-digipuppies */
+
+section.what-digipuppies {
+    background: #f17172;
+    text-align: center;
+    padding: 133px 0px 86px 0px;
+}
+
+section.what-digipuppies h2 {
+    font-size: 50px;
+    font-family: c-b;
+    color: #fff;
+    margin-bottom: 37px;
+}
+
+section.what-digipuppies p {
+    font-size: 30px;
+    color: #fff;
+    font-family: l-r;
+    width: 750px;
+    margin: 0px auto 144px auto;
+}
+
+section.what-digipuppies img {
+    width: 100%;
+    margin-bottom: 78px;
+}
+
+section.what-digipuppies a {
+    display: inline-block;
+    background: #9a45a9;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 18px;
+    font-family: l-b;
+    border-radius: 10px;
+    border-bottom: 6px solid #822b87;
+}
+
+section.what-digipuppies a:active {
+    border-bottom: 0px solid #822b87;
+    margin-top: 6px;
+    transition: all ease-in-out 0.1s;
+    -webkit-transition: all ease-in-out 0.1s;
+    -moz-transition: all ease-in-out 0.1s;
+    -o-transition: all ease-in-out 0.1s;
+    -ms-transition: all ease-in-out 0.1s;
+}
+
+
+/* //what-are-digipuppies */
+
+
+/* why-get-a-puppy */
+
+section.why-puppy {
+    background: url('../imgs/puppy-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 118px 0px 100px 0px;
+}
+
+section.why-puppy div.puppy-box {
+    width: 950px;
+    margin: 0 auto;
+    background: #fff;
+    text-align: center;
+    overflow: hidden;
+    padding: 0px 75px;
+    border-bottom: 10px solid #efefef;
+    border-radius: 12px;
+    box-shadow: 0px 0px 1px #efefef;
+    -webkit-box-shadow: 0px 0px 1px #efefef;
+    -moz-box-shadow: 0px 0px 1px #efefef;
+    -o-box-shadow: 0px 0px 1px #efefef;
+    -ms-box-shadow: 0px 0px 1px #efefef;
+}
+
+section.why-puppy div.puppy-box h2 {
+    font-size: 50px;
+    margin-top: 92px;
+    color: #588188;
+    font-family: c-b;
+}
+
+section.why-puppy div.puppy-box p {
+    font-size: 28px;
+    margin: 30px 0px 82px 0px;
+    color: #4a4a4a;
+    font-family: l-r;
+}
+
+
+/* //why-get-a-puppy*/
+
+
+/* fall-in-love */
+
+section.fall-in-love {
+    padding: 79px 0px 48px 0px;
+    background: #94c6c1;
+    text-align: center;
+}
+
+section.fall-in-love h2,
+section.fall-in-love h3 {
+    font-size: 50px;
+    color: #fff;
+    font-family: c-b;
+}
+
+section.fall-in-love div.items {
+    margin: 55px 0px 55px 0px;
+}
+
+
+/*// fall-in-love */
+
+
+/* helps */
+
+section.helps {
+    padding: 82px 0px 81px 0px;
+    text-align: center;
+    background: #f18384;
+    border-bottom: 1px solid #fff;
+}
+
+section.helps p {
+    font-size: 28px;
+    width: 800px;
+    margin: 0 auto;
+    font-family: l-r;
+    color: #fff;
+    margin-bottom: 41px;
+}
+
+section.helps a {
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    font-family: l-b;
+    width: 300px;
+    height: 60px;
+    background: #9a45a9;
+    line-height: 60px;
+    border-radius: 6px;
+    border-bottom: 6px solid #822b87;
+}
+
+section.helps a:active {
+    border-bottom: 0px solid #822b87;
+    margin-top: 6px;
+    transition: all ease-in-out 0.1s;
+    -webkit-transition: all ease-in-out 0.1s;
+    -moz-transition: all ease-in-out 0.1s;
+    -o-transition: all ease-in-out 0.1s;
+    -ms-transition: all ease-in-out 0.1s;
+}
+
+
+/* //helps */
+
+
+/* footer */
+
+footer {
+    padding: 41px 0px 60px 0px;
+    background: #f18384;
+}
+
+footer div.logo {
+    font-size: 50px;
+    font-family: c-b;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 26px;
+}
+
+footer ul li a {
+    font-family: l-b;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    padding-bottom: 5px;
+}
+
+footer ul li a:hover {
+    color: #9a45a9;
+    transition: all ease-in-out 0.3s;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    -ms-transition: all ease-in-out 0.3s;
+}
+
+
+/* //footer */
+
+
+/*==================================
+    About page
+==================================*/
+
+
+/* puppies-images */
+
+section.puppies-images {
+    padding: 164px 0px 55px 0px;
+    background: #fcc3be;
+}
+
+
+/*// puppies-images */
+
+
+/* digipuppies */
+
+section.digipuppies {
+    padding: 67px 0px 102px 0px;
+}
+
+section.digipuppies h1 {
+    font-size: 50px;
+    font-family: c-b;
+    color: #f17172;
+    margin-bottom: 50px;
+}
+
+section.digipuppies p {
+    font-size: 28px;
+    font-family: l-b;
+    color: #4a4a4a;
+}
+
+section.digipuppies div.links {
+    margin-top: 50px;
+}
+
+section.digipuppies div.links a {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-family: l-b;
+    font-size: 18px;
+    margin-right: 50px;
+    border-radius: 6px;
+    float: left;
+    transition: all ease-in-out 0.1s;
+    -webkit-transition: all ease-in-out 0.1s;
+    -moz-transition: all ease-in-out 0.1s;
+    -o-transition: all ease-in-out 0.1s;
+    -ms-transition: all ease-in-out 0.1s;
+}
+
+section.digipuppies div.links a.press {
+    background: #4685a4;
+    border-bottom: 6px solid #284f6d;
+}
+
+section.digipuppies div.links a.press:active {
+    border-bottom: 0px solid #284f6d;
+    margin-top: 6px;
+}
+
+section.digipuppies div.links a.faq {
+    background: #9a45a9;
+    border-bottom: 6px solid #822b87;
+}
+
+section.digipuppies div.links a.faq:active {
+    border-bottom: 0px solid #822b87;
+    margin-top: 6px;
+}
+
+section.digipuppies div.links a.tech {
+    background: #f17172;
+    border-bottom: 6px solid #ffa89d;
+}
+
+section.digipuppies div.links a.tech:active {
+    border-bottom: 0px solid #ffa89d;
+    margin-top: 6px;
+}
+
+
+/*// digipuppies */
+
+
+/* our mission */
+
+section.our-mission {
+    background: #f5f8fa;
+    padding: 73px 0px 109px 0px;
+}
+
+section.our-mission h3 {
+    font-size: 18px;
+    font-family: l-b;
+    color: #4a4a4a;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 21px;
+}
+
+section.our-mission h2 {
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    color: #588188;
+    font-family: c-b;
+    margin-bottom: 72px;
+}
+
+section.our-mission p {
+    font-family: l-b;
+    font-size: 28px;
+    color: #4a4a4a;
+}
+
+
+/* //our mission */
+
+
+/*==================================
+    Press page
+==================================*/
+
+
+/* banner */
+
+div.banner {
+    padding: 311px 0px 163px 0px;
+    background: #fcc3be;
+}
+
+div.banner h2 {
+    font-size: 50px;
+    text-align: center;
+    font-family: c-b;
+    color: #fff;
+}
+
+
+/* //banner */
+
+
+/* press */
+
+section.press {
+    padding: 69px 0px 78px 0px;
+}
+
+section.press h1 {
+    font-size: 50px;
+    font-family: c-b;
+    color: #f18384;
+    margin-bottom: 63px;
+}
+
+section.press p {
+    font-size: 28px;
+    font-family: l-r;
+    color: #4a4a4a;
+}
+
+
+/* //press */
+
+
+/* brands */
+
+section.brands {
+    background: #f5f8fa;
+    padding: 110px 0px 99px 0px;
+}
+
+section.brands h2 {
+    font-size: 50px;
+    font-family: c-b;
+    color: #588188;
+    margin-bottom: 56px;
+}
+
+section.brands div.brands-items div.brand {
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #efefef;
+    -webkit-box-shadow: 0px 0px 15px #efefef;
+    -moz-box-shadow: 0px 0px 15px #efefef;
+    -o-box-shadow: 0px 0px 15px #efefef;
+    -ms-box-shadow: 0px 0px 15px #efefef;
+    background: #fff;
+    margin-bottom: 30px;
+    border-bottom: 10px solid #efefef;
+}
+
+section.brands div.brands-items div.brand img {
+    width: 100%;
+}
+
+section.brands div.brands-items div.brand div.name-download {
+    padding: 16px 22px;
+    overflow: hidden;
+}
+
+section.brands div.brands-items div.brand div.name-download h3 {
+    display: inline-block;
+    float: left;
+    padding: 0px;
+    margin: 0px;
+    color: #4a4a4a;
+    font-size: 18px;
+    font-family: c-b;
+}
+
+section.brands div.brands-items div.brand div.name-download a {
+    float: right;
+    font-size: 18px;
+    color: #000;
+}
+
+section.brands a.paper {
+    display: block;
+    width: 230px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #9a45a9;
+    border-radius: 6px;
+    border-bottom: 6px solid #822b87;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    font-family: l-b;
+    margin-top: 30px;
+}
+
+section.brands a.paper:active {
+    border-bottom: 0px solid #822b87;
+    margin-top: 36px;
+}
+
+
+/* //brands */
+
+
+/* press-qoutes */
+
+section.press-qoutes {
+    padding: 103px 0px 59px 0px;
+}
+
+section.press-qoutes h2 {
+    font-size: 50px;
+    color: #f18384;
+    margin-bottom: 66px;
+    font-family: c-b;
+}
+
+section.press-qoutes div.qoutes div.qoute {
+    border-radius: 10px;
+    border-bottom: 10px solid #efefef;
+    box-shadow: 1px 1px 15px #efefef;
+    -webkit-box-shadow: 1px 1px 15px #efefef;
+    -moz-box-shadow: 1px 1px 15px #efefef;
+    -o-box-shadow: 1px 1px 15px #efefef;
+    -ms-box-shadow: 1px 1px 15px #efefef;
+    margin-bottom: 30px;
+    padding: 16px 22px;
+}
+
+section.press-qoutes div.qoutes div.qoute img {
+    margin-bottom: 36px;
+}
+
+section.press-qoutes div.qoutes div.qoute p {
+    font-size: 18px;
+    font-family: l-b;
+    margin-bottom: 55px;
+    color: #2e2e2e;
+}
+
+section.press-qoutes div.qoutes div.qoute h3 {
+    color: #cccccc;
+    font-family: l-r;
+    font-size: 18px;
+}
+
+
+/* //press-qoutes */
+
+
+/* news */
+
+section.news {
+    padding: 79px 0px 107px 0px;
+}
+
+section.news h2 {
+    font-size: 50px;
+    color: #f18384;
+    margin-bottom: 50px;
+    font-family: c-b;
+}
+
+section.news ul li {
+    display: block;
+    margin-bottom: 25px;
+    overflow: hidden;
+    font-family: l-r;
+    font-size: 24px;
+    line-height: 52px;
+    color: #4a4a4a;
+}
+
+section.news ul li i {
+    display: block;
+    float: left;
+    width: 52px;
+    height: 52px;
+    background: #94c6c1;
+    border-radius: 50%;
+    margin-right: 33px;
+}
+
+
+/* //news */
+
+
+/* have-question */
+
+section.have-question {
+    padding: 93px 0px 104px 0px;
+    text-align: center;
+    background: #fff4f1;
+}
+
+section.have-question h3 {
+    font-size: 28px;
+    font-family: l-r;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+}
+
+section.have-question a {
+    display: inline-block;
+    width: 230px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-family: l-b;
+    background: #9a45a9;
+    border-bottom: 6px solid #822b87;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+section.have-question a:active {
+    border-bottom: 0px solid #822b87;
+    margin-top: 6px;
+}
+
+
+/* //have-question */
+
+
+/*==================================
+    Press page
+==================================*/
+
+
+/* gitting started */
+
+section.getting-started {
+    padding: 67px 0px 150px 0px;
+}
+
+section.getting-started h2 {
+    font-size: 50px;
+    color: #f18384;
+    margin-bottom: 33px;
+    font-family: c-b;
+}
+
+section.getting-started div.panel-group div.panel-default {
+    border: none;
+    border-top: 2px solid #dbdbdb;
+    border-radius: 0px;
+    box-shadow: 0px 0px 0px;
+    -webkit-box-shadow: 0px 0px 0px;
+    -moz-box-shadow: 0px 0px 0px;
+    -o-box-shadow: 0px 0px 0px;
+    -ms-box-shadow: 0px 0px 0px;
+}
+
+section.getting-started div.panel-group div.panel-default div.panel-heading {
+    background: none;
+    border-radius: 0px;
+}
+
+section.getting-started div.panel-group div.panel-default div.panel-heading h4 {
+    font-size: 28px;
+    color: #4a4a4a;
+    font-family: l-b;
+    padding: 30px 0px;
+}
+
+section.getting-started div.panel-group div.panel-default div.panel-heading h4 a i {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: right;
+    border: 1px solid #5c5c5c;
+    border-radius: 50%;
+}
+
+section.getting-started div.panel-group div.panel-default div.panel-body {
+    border-top: 0px;
+    color: #898989;
+    font-size: 28px;
+    font-family: l-r;
+}
+
+.fa-minus {
+    color: #bb53c6;
+    border-color: #bb53c6 !important;
+}
+
+
+/* //gitting started */
+
+
+/*==================================
+    Terms page
+==================================*/
+
+section.terms {
+    padding: 199px 0px 98px 0px;
+}
+
+section.terms h1 {
+    font-size: 50px;
+    font-family: c-b;
+    color: #f18384;
+    margin-bottom: 24px;
+}
+
+section.terms h4 {
+    font-size: 18px;
+    color: #4a4a4a;
+    font-family: l-b;
+    margin-bottom: 46px;
+}
+
+section.terms p {
+    font-size: 18px;
+    font-family: l-r;
+    color: #4a4a4a;
+}
